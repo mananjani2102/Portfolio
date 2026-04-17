@@ -11,7 +11,7 @@ const milestones = [
   { year: 'Present', description: 'Building performant, beautiful web applications end-to-end with modern tooling', icon: Rocket },
 ]
 const stats = [
-  { number: '50+', label: 'Projects Completed' },
+  { number: '20+', label: 'Projects Completed' },
   { number: '1000+', label: 'Commits This Year' },
   { number: '24/7', label: 'Learning Mode' },
 ]

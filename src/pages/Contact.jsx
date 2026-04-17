@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Mail, Phone, MapPin, Github, Linkedin, Youtube, Twitter, Send, Check, ArrowUp, Loader2, AlertCircle } from 'lucide-react'
+import { Mail, Phone, MapPin, Code2, Github, Linkedin, Youtube, Twitter, Send, Check, ArrowUp, Loader2, AlertCircle } from 'lucide-react'
 import emailjs from '@emailjs/browser'
 
 const EMAILJS_SERVICE_ID = 'service_wyfa5uj'
@@ -14,6 +14,7 @@ const contactInfo = [
   { icon: MapPin, label: 'Location', value: 'India (Available for remote work)', href: null },
 ]
 const socialLinks = [
+  { icon: Code2, url: 'https://leetcode.com/u/mananjani', label: 'LeetCode' },
   { icon: Github, url: 'https://github.com/mananjani2102', label: 'GitHub' },
   { icon: Linkedin, url: 'https://www.linkedin.com/in/manan-jani-1a22443a3/', label: 'LinkedIn' },
   { icon: Youtube, url: 'https://youtube.com/@mananjani2102', label: 'YouTube' },
@@ -124,6 +125,7 @@ function ContactForm() {
         type="submit"
         disabled={status === 'loading' || status === 'success'}
         className="group relative w-full py-3.5 sm:py-4 rounded-2xl font-semibold text-sm overflow-hidden transition-all duration-300 disabled:opacity-70 active:scale-[0.99]"
+        data-cursor="Send"
       >
         <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-accent-gold to-accent-copper" />
         <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-accent-copper to-accent-gold opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -206,7 +208,7 @@ export default function Contact() {
                   <div className="min-w-0">
                     <p className="text-brown-500 text-xs font-mono uppercase tracking-wide mb-1">{info.label}</p>
                     {info.href ? (
-                      <a href={info.href} className="text-cream-200 text-sm hover:text-accent-gold transition-colors duration-300 break-all">
+                      <a href={info.href} className="text-cream-200 text-sm hover:text-accent-gold transition-colors duration-300 break-all" data-cursor={info.label}>
                         {info.value}
                       </a>
                     ) : (

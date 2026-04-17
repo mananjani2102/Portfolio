@@ -5,6 +5,7 @@ const navItems = [
   { label: 'About', href: '#about' },
   { label: 'Projects', href: '#projects' },
   { label: 'Skills', href: '#skills' },
+  { label: 'Resume', href: '#resume' },
   { label: 'Contact', href: '#contact' },
 ]
 const menuVariants = {
@@ -21,6 +22,12 @@ const lineVariants = {
 }
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
+  const [showNav, setShowNav] = useState(false)
+
+  useEffect(() => {
+    const timer = setTimeout(() => setShowNav(true), 2600)
+    return () => clearTimeout(timer)
+  }, [])
 
   useEffect(() => {
     if (isOpen) {
@@ -40,45 +47,73 @@ export default function Navigation() {
   }
   return (
     <>
-      <nav className="hidden md:flex fixed top-0 w-full z-[9998] bg-brown-950/90 backdrop-blur-md border-b border-brown-600/30 py-6 items-center justify-center gap-12" style={{ boxShadow: '0 4px 30px rgba(0, 0, 0, 0.5)' }}>
-        {navItems.map((item) => (
-          <a
-            key={item.href}
-            href={item.href}
-            onClick={(e) => handleClick(e, item.href)}
-            className="text-cream-100 hover:text-accent-gold font-serif text-sm uppercase transition-colors duration-300 relative group"
-            style={{ letterSpacing: '0.15em' }}
-          >
-            {item.label}
-            <span className="absolute -bottom-2 left-0 w-0 h-[1px] bg-accent-gold transition-all duration-300 group-hover:w-full"></span>
-          </a>
-        ))}
-      </nav>
+      <AnimatePresence>
+        {showNav && (
+          <>
+            <motion.div 
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+              className="hidden md:block fixed top-0 w-full z-[9998] bg-brown-950/90 backdrop-blur-md border-b border-brown-600/30 py-6" 
+              style={{ boxShadow: '0 4px 30px rgba(0, 0, 0, 0.5)', height: '73px' }}
+            />
+            <motion.nav 
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+              className="hidden md:flex fixed top-0 w-full z-[10000] py-6 items-center justify-center gap-12" 
+              style={{ height: '73px' }}
+            >
+              {navItems.map((item) => (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  onClick={(e) => handleClick(e, item.href)}
+                  className="text-cream-100 hover:text-white font-serif text-sm uppercase transition-colors duration-300 relative group px-2 py-1"
+                  style={{ letterSpacing: '0.15em' }}
+                  data-cursor=""
+                >
+                  {item.label}
+                  <span className="absolute -bottom-2 left-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full drop-shadow-md"></span>
+                </a>
+              ))}
+            </motion.nav>
+          </>
+        )}
+      </AnimatePresence>
 
-      <button
-        className="md:hidden fixed top-6 right-6 sm:top-8 sm:right-8 z-[9999] w-14 h-14 flex flex-col items-center justify-center gap-1.5 border border-brown-600/40 bg-brown-900/80 backdrop-blur-md hover:border-accent-gold/50 transition-all duration-300 hover:shadow-[0_0_20px_rgba(201,169,110,0.15)]"
-        style={{
-          borderRadius: '30%',
-        }}
-        onClick={() => setIsOpen(!isOpen)}
-        aria-label="Toggle navigation"
-      >
-        <motion.span
-          className="block w-6 h-[2px] bg-cream-100 origin-center"
-          animate={isOpen ? { rotate: 45, y: 5 } : { rotate: 0, y: 0 }}
-          transition={{ duration: 0.3 }}
-        />
-        <motion.span
-          className="block w-6 h-[2px] bg-cream-100"
-          animate={isOpen ? { opacity: 0, scaleX: 0 } : { opacity: 1, scaleX: 1 }}
-          transition={{ duration: 0.2 }}
-        />
-        <motion.span
-          className="block w-6 h-[2px] bg-cream-100 origin-center"
-          animate={isOpen ? { rotate: -45, y: -5 } : { rotate: 0, y: 0 }}
-          transition={{ duration: 0.3 }}
-        />
-      </button>
+      <AnimatePresence>
+        {showNav && (
+          <motion.button
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+            className="md:hidden fixed top-6 right-6 sm:top-8 sm:right-8 z-[9999] w-14 h-14 flex flex-col items-center justify-center gap-1.5 border border-brown-600/40 bg-brown-900/80 backdrop-blur-md hover:border-accent-gold/50 transition-all duration-300 hover:shadow-[0_0_20px_rgba(201,169,110,0.15)]"
+            style={{
+              borderRadius: '30%',
+            }}
+            onClick={() => setIsOpen(!isOpen)}
+            aria-label="Toggle navigation"
+            data-cursor="Menu"
+          >
+            <motion.span
+              className="block w-6 h-[2px] bg-cream-100 origin-center"
+              animate={isOpen ? { rotate: 45, y: 5 } : { rotate: 0, y: 0 }}
+              transition={{ duration: 0.3 }}
+            />
+            <motion.span
+              className="block w-6 h-[2px] bg-cream-100"
+              animate={isOpen ? { opacity: 0, scaleX: 0 } : { opacity: 1, scaleX: 1 }}
+              transition={{ duration: 0.2 }}
+            />
+            <motion.span
+              className="block w-6 h-[2px] bg-cream-100 origin-center"
+              animate={isOpen ? { rotate: -45, y: -5 } : { rotate: 0, y: 0 }}
+              transition={{ duration: 0.3 }}
+            />
+          </motion.button>
+        )}
+      </AnimatePresence>
       <AnimatePresence>
         {isOpen && (
           <motion.nav

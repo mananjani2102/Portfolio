@@ -1,9 +1,10 @@
 import { useEffect, useState, useRef, memo, useCallback, lazy, Suspense } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Github, Linkedin, Youtube, Twitter, ArrowDown, ExternalLink } from 'lucide-react'
+import { Code2, Github, Linkedin, Youtube, Twitter, ArrowDown, ExternalLink } from 'lucide-react'
 import profilePhoto from '../assets/my-linkedin image-modify.png'
 const ShaderBackground = lazy(() => import('../components/ShaderBackground'))
 const socialLinks = [
+  { icon: Code2, url: 'https://leetcode.com/u/mananjani', label: 'LeetCode' },
   { icon: Github, url: 'https://github.com/mananjani2102', label: 'GitHub' },
   { icon: Linkedin, url: 'https://www.linkedin.com/in/manan-jani-1a22443a3/', label: 'LinkedIn' },
   { icon: Youtube, url: 'https://youtube.com/@mananjani2102', label: 'YouTube' },
@@ -233,7 +234,7 @@ export default function Home() {
       <AnimatePresence>
         {showIntro && (
           <motion.div
-            className="absolute inset-0 z-50 flex items-center justify-center bg-brown-950"
+            className="fixed inset-0 z-[9999] flex items-center justify-center bg-brown-950"
             exit={{ opacity: 0 }}
             transition={{ duration: 0.6 }}
           >

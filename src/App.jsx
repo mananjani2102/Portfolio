@@ -7,6 +7,7 @@ import Home from './pages/Home'
 const About = lazy(() => import('./pages/About'))
 const Projects = lazy(() => import('./pages/Projects'))
 const Skills = lazy(() => import('./pages/Skills'))
+const Resume = lazy(() => import('./pages/Resume'))
 const Contact = lazy(() => import('./pages/Contact'))
 function LoadingFallback() {
   return (
@@ -32,6 +33,9 @@ export default function App() {
         </Suspense>
         <Suspense fallback={<LoadingFallback />}>
           <Skills />
+        </Suspense>
+        <Suspense fallback={<LoadingFallback />}>
+          <Resume />
         </Suspense>
         <Suspense fallback={<LoadingFallback />}>
           <Contact />
