@@ -60,7 +60,7 @@ export default function CustomCursor() {
   if (!isFinePointer) return null
   return (
     <motion.div
-      className="fixed top-0 left-0 pointer-events-none z-[9999]"
+      className="fixed top-0 left-0 pointer-events-none z-[99999]"
       style={{ x: springX, y: springY }}
       animate={{
         opacity: visible ? 1 : 0,
@@ -73,7 +73,7 @@ export default function CustomCursor() {
     >
       <div className="relative -translate-x-1/2 -translate-y-1/2">
         <div
-          className={`rounded-full transition-all duration-300 flex items-center justify-center ${hovered ? 'w-12 h-12' : 'w-3 h-3'}`}
+          className={`rounded-full transition-colors duration-300 flex items-center justify-center overflow-hidden p-1 ${hovered ? 'w-12 h-12' : 'w-3 h-3'}`}
           style={{
             background: hovered
               ? 'radial-gradient(circle, rgba(201, 169, 110, 0.95) 0%, rgba(201, 169, 110, 0.7) 100%)'
@@ -85,11 +85,11 @@ export default function CustomCursor() {
         >
           {hoverText && (
             <span
-              className="font-sans font-bold uppercase whitespace-nowrap"
+              className="font-sans font-bold uppercase text-center leading-tight"
               style={{
-                fontSize: '7px',
-                color: '#1a0f08',
-                letterSpacing: '0.02em',
+                fontSize: '6px',
+                color: '#2a1a0e',
+                letterSpacing: '0.05em',
                 lineHeight: 1,
               }}
             >
