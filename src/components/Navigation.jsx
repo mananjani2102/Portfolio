@@ -25,7 +25,7 @@ export default function Navigation() {
   const [showNav, setShowNav] = useState(false)
 
   useEffect(() => {
-    const timer = setTimeout(() => setShowNav(true), 2600)
+    const timer = setTimeout(() => setShowNav(true), 2400)
     return () => clearTimeout(timer)
   }, [])
 
@@ -43,38 +43,30 @@ export default function Navigation() {
     setTimeout(() => {
       const el = document.querySelector(href)
       if (el) el.scrollIntoView({ behavior: 'smooth' })
-    }, 400)
+    }, 50)
   }
   return (
     <>
       <AnimatePresence>
         {showNav && (
           <>
-            <motion.div 
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-              className="hidden md:block fixed top-0 w-full z-[9998] bg-brown-950/90 backdrop-blur-md border-b border-brown-600/30 py-6" 
-              style={{ boxShadow: '0 4px 30px rgba(0, 0, 0, 0.5)', height: '73px' }}
-            />
             <motion.nav 
-              initial={{ opacity: 0, y: -20 }}
+              initial={{ opacity: 0, y: -30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-              className="hidden md:flex fixed top-0 w-full z-[10000] py-6 items-center justify-center gap-12" 
-              style={{ height: '73px' }}
+              className="hidden md:flex fixed top-6 left-1/2 -translate-x-1/2 z-[8000] px-8 py-3 items-center justify-center gap-10 bg-brown-950/50 backdrop-blur-xl border border-accent-gold/20 rounded-full" 
+              style={{ boxShadow: '0 10px 35px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(201, 169, 110, 0.15)' }}
             >
               {navItems.map((item) => (
                 <a
                   key={item.href}
                   href={item.href}
                   onClick={(e) => handleClick(e, item.href)}
-                  className="text-cream-100 hover:text-white font-serif text-sm uppercase transition-colors duration-300 relative group px-2 py-1"
+                  className="text-brown-200 hover:text-accent-gold font-mono text-xs uppercase transition-colors duration-300 relative px-3 py-1"
                   style={{ letterSpacing: '0.15em' }}
-                  data-cursor=""
+                  data-cursor={item.label}
                 >
                   {item.label}
-                  <span className="absolute -bottom-2 left-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full drop-shadow-md"></span>
                 </a>
               ))}
             </motion.nav>
