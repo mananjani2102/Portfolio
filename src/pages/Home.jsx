@@ -87,93 +87,21 @@ const SpotlightEffect = memo(function SpotlightEffect() {
   )
 })
 const HeroPhoto = memo(function HeroPhoto() {
-  const containerRef = useRef(null)
-  const rafRef = useRef(null)
-  useEffect(() => {
-    const el = containerRef.current
-    if (!el) return
-    const handler = (e) => {
-      if (rafRef.current !== null) return
-      rafRef.current = requestAnimationFrame(() => {
-        const ox = (e.clientX - window.innerWidth / 2) * 0.015
-        const oy = (e.clientY - window.innerHeight / 2) * 0.015
-        el.style.setProperty('--parallax-x', `${ox}px`)
-        el.style.setProperty('--parallax-y', `${oy}px`)
-        rafRef.current = null
-      })
-    }
-    window.addEventListener('mousemove', handler, { passive: true })
-    return () => {
-      window.removeEventListener('mousemove', handler)
-      if (rafRef.current !== null) cancelAnimationFrame(rafRef.current)
-    }
-  }, [])
   return (
-    <div
-      ref={containerRef}
-      className="relative flex items-center justify-center"
-      style={{
-        '--parallax-x': '0px',
-        '--parallax-y': '0px',
-        transform: 'translate3d(var(--parallax-x), var(--parallax-y), 0)',
-        willChange: 'transform',
-      }}
-    >
-      {/* Ambient glow behind photo */}
+    <div className="relative flex items-center justify-center">
       <div
-        className="absolute rounded-full hero-photo-glow"
+        className="overflow-hidden rounded-2xl border border-brown-800/40 shadow-2xl"
         style={{
-          width: '110%',
-          height: '110%',
-          background: 'radial-gradient(circle, rgba(201, 169, 110, 0.12) 0%, rgba(201, 169, 110, 0.04) 40%, transparent 70%)',
-          filter: 'blur(40px)',
-        }}
-      />
-
-      {/* Rotating gradient border */}
-      <div
-        className="relative rounded-2xl hero-border-spin group cursor-pointer"
-        style={{
-          padding: '3px',
-          background: 'conic-gradient(from var(--border-angle, 0deg), rgba(201, 169, 110, 0.1), rgba(201, 169, 110, 0.5), rgba(184, 115, 51, 0.6), rgba(201, 169, 110, 0.5), rgba(201, 169, 110, 0.1))',
+          width: '320px',
+          height: '380px',
         }}
       >
-        {/* Photo container */}
-        <div
-          className="relative overflow-hidden rounded-2xl hero-photo-float"
-          style={{
-            width: '320px',
-            height: '380px',
-          }}
-        >
-          <img
-            src={profilePhoto}
-            alt="Manan Jani"
-            className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110 group-hover:brightness-110"
-            style={{
-              filter: 'contrast(1.05) saturate(0.9)',
-            }}
-          />
-          {/* Overlay gradient on hover */}
-          <div
-            className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700"
-            style={{
-              background: 'linear-gradient(180deg, transparent 40%, rgba(201, 169, 110, 0.08) 100%)',
-            }}
-          />
-          {/* Bottom vignette */}
-          <div
-            className="absolute inset-0 pointer-events-none"
-            style={{
-              background: 'linear-gradient(180deg, transparent 50%, rgba(26, 15, 8, 0.6) 100%)',
-            }}
-          />
-        </div>
+        <img
+          src={profilePhoto}
+          alt="Manan Jani"
+          className="w-full h-full object-cover"
+        />
       </div>
-
-      {/* Corner accents */}
-      <div className="absolute -top-3 -right-3 w-8 h-8 border-t-2 border-r-2 border-accent-gold/30 rounded-tr-lg hero-corner-pulse" />
-      <div className="absolute -bottom-3 -left-3 w-8 h-8 border-b-2 border-l-2 border-accent-gold/30 rounded-bl-lg hero-corner-pulse" style={{ animationDelay: '1s' }} />
     </div>
   )
 })
