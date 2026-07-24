@@ -64,6 +64,17 @@ section {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-brown-600);
 }
+@keyframes hero-shimmer-sweep {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+.hero-shimmer-sweep {
+  animation: hero-shimmer-sweep 1.5s ease-in-out;
+}
+@keyframes cursor-text-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
 @keyframes particle-float {
   0%,
   100% {
@@ -323,9 +334,10 @@ section {
 
 .hero-border-spin:hover {
   box-shadow:
-    0 0 30px rgba(201, 169, 110, 0.2),
-    0 0 60px rgba(201, 169, 110, 0.1),
-    0 0 100px rgba(201, 169, 110, 0.05);
+    0 0 25px rgba(201, 169, 110, 0.25),
+    0 0 50px rgba(201, 169, 110, 0.15),
+    0 0 80px rgba(201, 169, 110, 0.08),
+    0 0 120px rgba(201, 169, 110, 0.04);
 }
 
 @keyframes hero-photo-float {
@@ -374,6 +386,66 @@ section {
   will-change: opacity;
 }
 
+@keyframes hero-aura-pulse {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(1) translateZ(0);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.08) translateZ(0);
+  }
+}
+
+.hero-aura-pulse {
+  animation: hero-aura-pulse 5s ease-in-out infinite;
+  will-change: transform, opacity;
+}
+
+@keyframes hero-outer-ring-spin {
+  from {
+    transform: rotate(0deg) translateZ(0);
+  }
+  to {
+    transform: rotate(360deg) translateZ(0);
+  }
+}
+
+.hero-outer-ring-spin {
+  animation: hero-outer-ring-spin 20s linear infinite;
+  will-change: transform;
+}
+
+@keyframes hero-scan-line {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+
+.hero-scan-line {
+  animation: hero-scan-line 3s ease-in-out infinite;
+  will-change: background-position;
+}
+
+@keyframes hero-side-line-pulse {
+  0%, 100% {
+    opacity: 0.3;
+    transform: translateY(-50%) scaleY(1) translateZ(0);
+  }
+  50% {
+    opacity: 0.7;
+    transform: translateY(-50%) scaleY(1.3) translateZ(0);
+  }
+}
+
+.hero-side-line-pulse {
+  animation: hero-side-line-pulse 4s ease-in-out infinite;
+  will-change: opacity, transform;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   .particle-float,
@@ -389,7 +461,11 @@ section {
   .hero-border-spin,
   .hero-photo-float,
   .hero-photo-glow,
-  .hero-corner-pulse {
+  .hero-corner-pulse,
+  .hero-aura-pulse,
+  .hero-outer-ring-spin,
+  .hero-scan-line,
+  .hero-side-line-pulse {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
