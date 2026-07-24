@@ -1,4 +1,4 @@
-import { memo, useState, useMemo } from 'react'
+import { memo, useState, useMemo, useCallback, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ExternalLink, Github, Youtube } from 'lucide-react'
 import SectionWrapper from '../components/SectionWrapper'
@@ -185,33 +185,67 @@ const cardVariants = {
 /* ─── Project Card ─────────────────────────────────────────────────── */
 
 const ProjectCard = memo(function ProjectCard({ project, index }) {
+  const cardRef = useRef(null)
+  const spotlightRef = useRef(null)
+
+  const handleMouseMove = useCallback((e) => {
+    const card = cardRef.current
+    const spot = spotlightRef.current
+    if (!card || !spot) return
+    const rect = card.getBoundingClientRect()
+    const x = e.clientX - rect.left
+    const y = e.clientY - rect.top
+    const centerX = rect.width / 2
+    const centerY = rect.height / 2
+    const rotateX = ((y - centerY) / centerY) * -4
+    const rotateY = ((x - centerX) / centerX) * 4
+    card.style.transform = `perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`
+    spot.style.setProperty('--spot-x', `${x}px`)
+    spot.style.setProperty('--spot-y', `${y}px`)
+  }, [])
+
+  const handleMouseLeave = useCallback(() => {
+    const card = cardRef.current
+    if (!card) return
+    card.style.transform = 'perspective(800px) rotateX(0deg) rotateY(0deg) scale(1)'
+  }, [])
+
   return (
     <motion.div
-      className="glow-card group relative overflow-hidden rounded-2xl bg-brown-900/20 backdrop-blur-sm h-full"
+      ref={cardRef}
+      className="group relative overflow-hidden rounded-2xl bg-brown-900/30 border border-brown-800/40 backdrop-blur-md h-full flex flex-col hover:border-accent-gold/40"
+      style={{ transition: 'transform 0.3s ease-out, border-color 0.5s ease, background-color 0.5s ease', willChange: 'transform' }}
       custom={index}
       variants={cardVariants}
       initial="hidden"
       animate="visible"
       exit="exit"
       layout
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleMouseLeave}
     >
-      {/* Hover gradient overlay */}
+      {/* Mouse-tracking spotlight glow */}
       <div
+        ref={spotlightRef}
         className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none z-0"
         style={{
-          background:
-            'radial-gradient(ellipse at 30% 20%, rgba(201, 169, 110, 0.08) 0%, rgba(184, 115, 51, 0.04) 40%, transparent 70%)',
+          '--spot-x': '50%',
+          '--spot-y': '50%',
+          background: 'radial-gradient(350px circle at var(--spot-x) var(--spot-y), rgba(201, 169, 110, 0.12), transparent 60%)',
         }}
       />
 
-      <div className="relative z-[1] p-6 sm:p-8 flex flex-col h-full">
-        {/* Preview image */}
-        <div className="relative h-44 w-full rounded-xl overflow-hidden mb-5 bg-brown-800/60 border border-brown-700/30">
+      {/* Subtle top edge gold line on hover */}
+      <div className="absolute top-0 left-[10%] right-[10%] h-[1px] bg-gradient-to-r from-transparent via-accent-gold/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none z-0" />
+
+      <div className="relative z-[1] p-6 sm:p-7 flex flex-col h-full">
+        {/* Preview image with smooth zoom */}
+        <div className="relative h-44 w-full rounded-xl overflow-hidden mb-5 bg-brown-950/80 border border-brown-800/50 group-hover:border-accent-gold/30 transition-colors duration-500">
           {project.image ? (
             <img
               src={project.image}
               alt={project.name}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
               loading="lazy"
             />
           ) : (
@@ -221,14 +255,16 @@ const ProjectCard = memo(function ProjectCard({ project, index }) {
               </span>
             </div>
           )}
+          {/* Subtle gradient overlay over image */}
+          <div className="absolute inset-0 bg-gradient-to-t from-brown-950/60 via-transparent to-transparent opacity-60 group-hover:opacity-20 transition-opacity duration-500 pointer-events-none" />
         </div>
 
         {/* Card header */}
         <div className="flex items-start justify-between mb-3">
-          <span className="text-brown-500 group-hover:text-accent-gold/70 font-mono text-xs tracking-widest transition-colors duration-300">
+          <span className="text-brown-500 group-hover:text-accent-gold/90 font-mono text-xs tracking-widest transition-colors duration-300">
             {String(index + 1).padStart(2, '0')}
           </span>
-          <span className="px-2.5 py-0.5 text-[10px] font-mono uppercase tracking-wider text-accent-gold/60 border border-accent-gold/20 rounded-full">
+          <span className="px-2.5 py-0.5 text-[10px] font-mono uppercase tracking-wider text-accent-gold/70 border border-accent-gold/20 rounded-full group-hover:border-accent-gold/40 group-hover:bg-accent-gold/10 transition-all duration-300">
             {project.category}
           </span>
         </div>
@@ -247,7 +283,7 @@ const ProjectCard = memo(function ProjectCard({ project, index }) {
             {project.stack.map((tech) => (
               <span
                 key={tech}
-                className="px-2.5 sm:px-3 py-1 text-[11px] sm:text-xs font-mono text-brown-400 border border-brown-700/50 rounded-full group-hover:border-accent-gold/40 group-hover:text-accent-gold/80 group-hover:bg-accent-gold/5 transition-all duration-300"
+                className="px-2.5 sm:px-3 py-1 text-[11px] sm:text-xs font-mono text-brown-400 border border-brown-800/60 rounded-full group-hover:border-accent-gold/30 group-hover:text-accent-gold/90 group-hover:bg-accent-gold/5 transition-all duration-300"
               >
                 {tech}
               </span>
@@ -255,13 +291,13 @@ const ProjectCard = memo(function ProjectCard({ project, index }) {
           </div>
 
           {/* Icon buttons row */}
-          <div className="flex items-center gap-2 mt-auto pt-4">
+          <div className="flex items-center gap-2.5 mt-auto pt-4 border-t border-brown-800/30 group-hover:border-brown-700/40 transition-colors duration-300">
             {project.github && (
               <a
                 href={project.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-lg bg-brown-900/60 border border-brown-700/50 flex items-center justify-center text-brown-400 hover:text-accent-gold hover:border-accent-gold/40 transition-all duration-300"
+                className="w-9 h-9 rounded-lg bg-brown-950/60 border border-brown-800/60 flex items-center justify-center text-brown-400 hover:text-accent-gold hover:border-accent-gold/50 hover:bg-brown-900/80 transition-all duration-300"
                 data-cursor="GitHub"
               >
                 <Github size={15} />
@@ -272,7 +308,7 @@ const ProjectCard = memo(function ProjectCard({ project, index }) {
                 href={project.live}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-lg bg-brown-900/60 border border-brown-700/50 flex items-center justify-center text-brown-400 hover:text-accent-gold hover:border-accent-gold/40 transition-all duration-300"
+                className="w-9 h-9 rounded-lg bg-brown-950/60 border border-brown-800/60 flex items-center justify-center text-brown-400 hover:text-accent-gold hover:border-accent-gold/50 hover:bg-brown-900/80 transition-all duration-300"
                 data-cursor="Live Demo"
               >
                 <ExternalLink size={15} />
@@ -283,7 +319,7 @@ const ProjectCard = memo(function ProjectCard({ project, index }) {
                 href={project.youtube}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-lg bg-brown-900/60 border border-brown-700/50 flex items-center justify-center text-brown-400 hover:text-accent-gold hover:border-accent-gold/40 transition-all duration-300"
+                className="w-9 h-9 rounded-lg bg-brown-950/60 border border-brown-800/60 flex items-center justify-center text-brown-400 hover:text-accent-gold hover:border-accent-gold/50 hover:bg-brown-900/80 transition-all duration-300"
                 data-cursor="YouTube"
               >
                 <Youtube size={15} />
@@ -302,6 +338,7 @@ function FilterPill({ label, active, onClick, count }) {
   return (
     <button
       onClick={onClick}
+      data-cursor={label}
       className={`relative px-5 py-2 text-sm font-mono tracking-wide rounded-full border transition-all duration-300 cursor-pointer ${
         active
           ? 'bg-brown-800/50 border-accent-gold/30 text-accent-gold shadow-[0_0_12px_rgba(201,169,110,0.08)]'
