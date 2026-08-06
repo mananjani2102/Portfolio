@@ -146,13 +146,13 @@ Application will run locally at `http://localhost:5173`.
 
 ## Contact
 
-| Channel | Contact Address | Action |
-|:---|:---|:---:|
-| **Live Portfolio** | manan-jani.netlify.app | [Visit Website](https://manan-jani.netlify.app/) |
-| **Email** | manan.jani.cg@gmail.com | [Send Email](mailto:manan.jani.cg@gmail.com) |
-| **LinkedIn** | linkedin.com/in/manan-jani-1a22443a3 | [Connect](https://www.linkedin.com/in/manan-jani-1a22443a3/) |
-| **GitHub** | github.com/mananjani2102 | [View Profile](https://github.com/mananjani2102) |
-| **X (Twitter)** | x.com/Mananjani2102 | [Follow](https://x.com/Mananjani2102) |
+| Platform | Direct Link |
+|:---|:---|
+| **Live Portfolio** | [manan-jani.netlify.app](https://manan-jani.netlify.app/) |
+| **Email** | [manan.jani.cg@gmail.com](mailto:manan.jani.cg@gmail.com) |
+| **LinkedIn** | [linkedin.com/in/manan-jani-1a22443a3](https://www.linkedin.com/in/manan-jani-1a22443a3/) |
+| **GitHub** | [github.com/mananjani2102](https://github.com/mananjani2102) |
+| **X (Twitter)** | [x.com/Mananjani2102](https://x.com/Mananjani2102) |
 
 <br>
 
