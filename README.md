@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=c9a96e&height=180&section=header&text=MANAN%20JANI&fontSize=48&fontAlignY=38&fontColor=1a0f08&desc=Full%20Stack%20Developer%20-%20React%2019%20and%20Three.js&descAlignY=58&descSize=16&descColor=3c2415" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2a1a0e,50:5c3a20,100:c9a96e&height=180&section=header&text=MANAN%20JANI&fontSize=48&fontAlignY=38&fontColor=ffffff&desc=Full%20Stack%20Developer%20-%20React%2019%20and%20Three.js&descAlignY=58&descSize=16&descColor=fdf8f0" width="100%" />
 
 <br>
 
@@ -9,36 +9,36 @@
 <br><br>
 
 <p align="center">
-  <a href="https://manan-jani.netlify.app/"><img src="https://img.shields.io/badge/Live_Portfolio-c9a96e?style=for-the-badge&logo=netlify&logoColor=1a0f08&labelColor=1a0f08" alt="Live Portfolio" /></a>&nbsp;&nbsp;
-  <a href="https://github.com/mananjani2102/Portfolio"><img src="https://img.shields.io/badge/Source_Code-c9a96e?style=for-the-badge&logo=github&logoColor=1a0f08&labelColor=1a0f08" alt="Source Code" /></a>&nbsp;&nbsp;
-  <a href="https://www.linkedin.com/in/manan-jani-1a22443a3/"><img src="https://img.shields.io/badge/LinkedIn-c9a96e?style=for-the-badge&logo=linkedin&logoColor=1a0f08&labelColor=1a0f08" alt="LinkedIn" /></a>
+  <a href="https://manan-jani.netlify.app/"><img src="https://img.shields.io/badge/Live_Portfolio-b87333?style=for-the-badge&logo=netlify&logoColor=white" alt="Live Portfolio" /></a>&nbsp;&nbsp;
+  <a href="https://github.com/mananjani2102/Portfolio"><img src="https://img.shields.io/badge/Source_Code-5c3a20?style=for-the-badge&logo=github&logoColor=c9a96e" alt="Source Code" /></a>&nbsp;&nbsp;
+  <a href="https://www.linkedin.com/in/manan-jani-1a22443a3/"><img src="https://img.shields.io/badge/LinkedIn-3c2415?style=for-the-badge&logo=linkedin&logoColor=c9a96e" alt="LinkedIn" /></a>
 </p>
 
 <br>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/React_19-c9a96e?style=flat-square&logo=react&logoColor=1a0f08&labelColor=1a0f08" />&nbsp;
-  <img src="https://img.shields.io/badge/Vite_7-c9a96e?style=flat-square&logo=vite&logoColor=1a0f08&labelColor=1a0f08" />&nbsp;
-  <img src="https://img.shields.io/badge/Three.js-c9a96e?style=flat-square&logo=three.js&logoColor=1a0f08&labelColor=1a0f08" />&nbsp;
-  <img src="https://img.shields.io/badge/Tailwind_CSS-c9a96e?style=flat-square&logo=tailwindcss&logoColor=1a0f08&labelColor=1a0f08" />&nbsp;
-  <img src="https://img.shields.io/badge/Framer_Motion-c9a96e?style=flat-square&logo=framer&logoColor=1a0f08&labelColor=1a0f08" />
+  <img src="https://img.shields.io/badge/React_19-2a1a0e?style=flat-square&logo=react&logoColor=61DAFB&labelColor=1a0f08" />&nbsp;
+  <img src="https://img.shields.io/badge/Vite_7-2a1a0e?style=flat-square&logo=vite&logoColor=646CFF&labelColor=1a0f08" />&nbsp;
+  <img src="https://img.shields.io/badge/Three.js-2a1a0e?style=flat-square&logo=three.js&logoColor=c9a96e&labelColor=1a0f08" />&nbsp;
+  <img src="https://img.shields.io/badge/Tailwind_CSS-2a1a0e?style=flat-square&logo=tailwindcss&logoColor=38B2AC&labelColor=1a0f08" />&nbsp;
+  <img src="https://img.shields.io/badge/Framer_Motion-2a1a0e?style=flat-square&logo=framer&logoColor=0055FF&labelColor=1a0f08" />
 </p>
 
 </div>
 
 <br>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=c9a96e&height=3&section=header" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:2a1a0e,50:5c3a20,100:c9a96e&height=3&section=header" width="100%" />
 
 <br>
 
 ## Overview
 
-A high-performance developer portfolio built with **React 19**, **Three.js**, **WebGL GLSL Shaders**, and **Framer Motion**. It features custom shader backgrounds, 3D tilt interactions, and a bespoke leather-and-gold aesthetic (`#1a0f08` dark espresso, `#c9a96e` brushed gold).
+A high-performance developer portfolio built with **React 19**, **Three.js**, **WebGL GLSL Shaders**, and **Framer Motion**. It features custom shader backgrounds, 3D tilt interactions, and a bespoke leather-and-gold aesthetic (`#1a0f08` dark espresso, `#3c2415` warm umber, `#c9a96e` brushed gold).
 
 <br>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=c9a96e&height=3&section=header" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:2a1a0e,50:5c3a20,100:c9a96e&height=3&section=header" width="100%" />
 
 <br>
 
@@ -85,7 +85,7 @@ A high-performance developer portfolio built with **React 19**, **Three.js**, **
 
 <br>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=c9a96e&height=3&section=header" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:2a1a0e,50:5c3a20,100:c9a96e&height=3&section=header" width="100%" />
 
 <br>
 
@@ -101,7 +101,7 @@ A high-performance developer portfolio built with **React 19**, **Three.js**, **
 
 <br>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=c9a96e&height=3&section=header" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:2a1a0e,50:5c3a20,100:c9a96e&height=3&section=header" width="100%" />
 
 <br>
 
@@ -125,7 +125,7 @@ Application will run locally at `http://localhost:5173`.
 
 <br>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=c9a96e&height=3&section=header" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:2a1a0e,50:5c3a20,100:c9a96e&height=3&section=header" width="100%" />
 
 <br>
 
@@ -140,46 +140,24 @@ Application will run locally at `http://localhost:5173`.
 
 <br>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=c9a96e&height=3&section=header" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:2a1a0e,50:5c3a20,100:c9a96e&height=3&section=header" width="100%" />
 
 <br>
 
 ## Contact & Connect
 
+Feel free to reach out for collaborations, project inquiries, or technical opportunities.
+
+- **Live Portfolio:** [manan-jani.netlify.app](https://manan-jani.netlify.app/)
+- **Email:** [manan.jani.cg@gmail.com](mailto:manan.jani.cg@gmail.com)
+- **LinkedIn:** [linkedin.com/in/manan-jani-1a22443a3](https://www.linkedin.com/in/manan-jani-1a22443a3/)
+- **GitHub:** [github.com/mananjani2102](https://github.com/mananjani2102)
+- **X (Twitter):** [x.com/Mananjani2102](https://x.com/Mananjani2102)
+
+<br>
+
 <div align="center">
 
-<br>
-
-<table width="100%" align="center">
-<tr>
-<td align="center" style="padding: 20px;">
-
-### MANAN JANI
-
-*Full Stack Web Developer & Creative Engineer*
-
-<br>
-
-<a href="https://manan-jani.netlify.app/"><img src="https://img.shields.io/badge/Live_Portfolio-manan--jani.netlify.app-c9a96e?style=for-the-badge&logo=netlify&logoColor=1a0f08&labelColor=1a0f08" alt="Live Portfolio" /></a>
-&nbsp;&nbsp;
-<a href="mailto:manan.jani.cg@gmail.com"><img src="https://img.shields.io/badge/Email-manan.jani.cg@gmail.com-c9a96e?style=for-the-badge&logo=gmail&logoColor=1a0f08&labelColor=1a0f08" alt="Email" /></a>
-
-<br><br>
-
-<a href="https://www.linkedin.com/in/manan-jani-1a22443a3/"><img src="https://img.shields.io/badge/LinkedIn-manan--jani-c9a96e?style=for-the-badge&logo=linkedin&logoColor=1a0f08&labelColor=1a0f08" alt="LinkedIn" /></a>
-&nbsp;&nbsp;
-<a href="https://github.com/mananjani2102"><img src="https://img.shields.io/badge/GitHub-mananjani2102-c9a96e?style=for-the-badge&logo=github&logoColor=1a0f08&labelColor=1a0f08" alt="GitHub" /></a>
-&nbsp;&nbsp;
-<a href="https://x.com/Mananjani2102"><img src="https://img.shields.io/badge/X-@Mananjani2102-c9a96e?style=for-the-badge&logo=x&logoColor=1a0f08&labelColor=1a0f08" alt="X" /></a>
-
-</td>
-</tr>
-</table>
-
-<br>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2a1a0e,50:5c3a20,100:c9a96e&height=120&section=footer" width="100%" />
 
 </div>
-
-<br>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=c9a96e&height=120&section=footer" width="100%" />
