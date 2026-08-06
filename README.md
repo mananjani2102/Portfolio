@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2a1a0e,50:5c3a20,100:c9a96e&height=180&section=header&text=MANAN%20JANI&fontSize=48&fontAlignY=38&fontColor=ffffff&desc=Full%20Stack%20Developer%20-%20React%2019%20and%20Three.js&descAlignY=58&descSize=16&descColor=fdf8f0" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:3c2415,35:7a4f2b,70:b87333,100:c9a96e&height=240&section=header&text=MANAN%20JANI&fontSize=52&fontAlignY=36&fontColor=ffffff&desc=Full%20Stack%20Developer%20-%20React%2019%20and%20Three.js&descAlignY=58&descSize=17&descColor=fdf8f0" width="100%" />
 
 <br>
 
@@ -28,7 +28,7 @@
 
 <br>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:2a1a0e,50:5c3a20,100:c9a96e&height=3&section=header" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:3c2415,35:7a4f2b,70:b87333,100:c9a96e&height=4&section=header" width="100%" />
 
 <br>
 
@@ -38,7 +38,7 @@ A high-performance developer portfolio built with **React 19**, **Three.js**, **
 
 <br>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:2a1a0e,50:5c3a20,100:c9a96e&height=3&section=header" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:3c2415,35:7a4f2b,70:b87333,100:c9a96e&height=4&section=header" width="100%" />
 
 <br>
 
@@ -85,7 +85,7 @@ A high-performance developer portfolio built with **React 19**, **Three.js**, **
 
 <br>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:2a1a0e,50:5c3a20,100:c9a96e&height=3&section=header" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:3c2415,35:7a4f2b,70:b87333,100:c9a96e&height=4&section=header" width="100%" />
 
 <br>
 
@@ -101,7 +101,7 @@ A high-performance developer portfolio built with **React 19**, **Three.js**, **
 
 <br>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:2a1a0e,50:5c3a20,100:c9a96e&height=3&section=header" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:3c2415,35:7a4f2b,70:b87333,100:c9a96e&height=4&section=header" width="100%" />
 
 <br>
 
@@ -125,7 +125,7 @@ Application will run locally at `http://localhost:5173`.
 
 <br>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:2a1a0e,50:5c3a20,100:c9a96e&height=3&section=header" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:3c2415,35:7a4f2b,70:b87333,100:c9a96e&height=4&section=header" width="100%" />
 
 <br>
 
@@ -140,24 +140,24 @@ Application will run locally at `http://localhost:5173`.
 
 <br>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:2a1a0e,50:5c3a20,100:c9a96e&height=3&section=header" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:3c2415,35:7a4f2b,70:b87333,100:c9a96e&height=4&section=header" width="100%" />
 
 <br>
 
-## Contact & Connect
+## Contact
 
-Feel free to reach out for collaborations, project inquiries, or technical opportunities.
-
-- **Live Portfolio:** [manan-jani.netlify.app](https://manan-jani.netlify.app/)
-- **Email:** [manan.jani.cg@gmail.com](mailto:manan.jani.cg@gmail.com)
-- **LinkedIn:** [linkedin.com/in/manan-jani-1a22443a3](https://www.linkedin.com/in/manan-jani-1a22443a3/)
-- **GitHub:** [github.com/mananjani2102](https://github.com/mananjani2102)
-- **X (Twitter):** [x.com/Mananjani2102](https://x.com/Mananjani2102)
+| Channel | Contact Address | Action |
+|:---|:---|:---:|
+| **Live Portfolio** | manan-jani.netlify.app | [Visit Website](https://manan-jani.netlify.app/) |
+| **Email** | manan.jani.cg@gmail.com | [Send Email](mailto:manan.jani.cg@gmail.com) |
+| **LinkedIn** | linkedin.com/in/manan-jani-1a22443a3 | [Connect](https://www.linkedin.com/in/manan-jani-1a22443a3/) |
+| **GitHub** | github.com/mananjani2102 | [View Profile](https://github.com/mananjani2102) |
+| **X (Twitter)** | x.com/Mananjani2102 | [Follow](https://x.com/Mananjani2102) |
 
 <br>
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2a1a0e,50:5c3a20,100:c9a96e&height=120&section=footer" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:3c2415,35:7a4f2b,70:b87333,100:c9a96e&height=180&section=footer" width="100%" />
 
 </div>
