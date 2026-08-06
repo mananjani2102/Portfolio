@@ -1,49 +1,39 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a0f08,50:3c2415,100:c9a96e&height=220&section=header&text=&fontSize=0" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:b87333,25:c9a96e,50:d4a574,75:c9a96e,100:b87333&height=200&section=header&text=Manan%20Jani&fontSize=48&fontAlignY=35&fontColor=2a1a0e&desc=Full%20Stack%20Developer&descAlignY=55&descSize=16&descColor=3c2415&animation=fadeIn" width="100%" />
 
 <br>
 
-<img src="https://readme-typing-svg.demolab.com?font=Cormorant+Garamond&weight=700&size=52&duration=3500&pause=1200&color=C9A96E&center=true&vCenter=true&repeat=false&width=600&height=70&lines=Manan+Jani" />
+<p>
+  <a href="https://manan-jani.netlify.app/">
+    <img src="https://img.shields.io/badge/Live_Portfolio-b87333?style=for-the-badge&logoColor=white" />
+  </a>
+  &nbsp;
+  <a href="https://github.com/mananjani2102/Portfolio">
+    <img src="https://img.shields.io/badge/Source_Code-5c3a20?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+  &nbsp;
+  <a href="https://www.linkedin.com/in/manan-jani-1a22443a3/">
+    <img src="https://img.shields.io/badge/LinkedIn-5c3a20?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+</p>
+
+A performance-first developer portfolio built with **React 19**, **Three.js**, and **Framer Motion**.<br>
+WebGL shader backgrounds, 3D parallax interactions, and a bespoke leather-and-gold design system.
 
 <br>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=400&size=14&duration=2500&pause=800&color=A06B3A&center=true&vCenter=true&width=700&height=30&lines=Full+Stack+Developer+%7C+React+%7C+Three.js+%7C+WebGL+%7C+Node.js" />
-
-<br><br>
-
-<a href="https://manan-jani.netlify.app/">
-  <img src="https://img.shields.io/badge/Live_Portfolio-c9a96e?style=for-the-badge&logoColor=1a0f08" alt="Live Portfolio" />
-</a>
+<img src="https://img.shields.io/github/last-commit/mananjani2102/Portfolio?style=flat-square&color=b87333" />
 &nbsp;
-<a href="https://github.com/mananjani2102/Portfolio">
-  <img src="https://img.shields.io/badge/Source_Code-3c2415?style=for-the-badge&logo=github&logoColor=c9a96e" alt="Source Code" />
-</a>
+<img src="https://img.shields.io/github/languages/top/mananjani2102/Portfolio?style=flat-square&color=b87333" />
 &nbsp;
-<a href="https://www.linkedin.com/in/manan-jani-1a22443a3/">
-  <img src="https://img.shields.io/badge/LinkedIn-2a1a0e?style=for-the-badge&logo=linkedin&logoColor=c9a96e" alt="LinkedIn" />
-</a>
-
-<br><br>
-
-A high-fidelity, performance-first developer portfolio built with **React 19**, **Three.js**, and **Framer Motion**.<br>
-Featuring WebGL shader backgrounds, 3D parallax interactions, and a bespoke leather-and-gold design system.
-
-<br>
-
-<img src="https://img.shields.io/github/last-commit/mananjani2102/Portfolio?style=flat-square&color=c9a96e&labelColor=1a0f08" />
-&nbsp;
-<img src="https://img.shields.io/github/languages/top/mananjani2102/Portfolio?style=flat-square&color=c9a96e&labelColor=1a0f08" />
-&nbsp;
-<img src="https://img.shields.io/badge/license-MIT-c9a96e?style=flat-square&labelColor=1a0f08" />
+<img src="https://img.shields.io/badge/license-MIT-b87333?style=flat-square" />
 
 </div>
 
 <br>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:1a0f08,50:3c2415,100:c9a96e&height=2" width="100%" />
-
-<br>
+---
 
 ## Preview
 
@@ -51,28 +41,44 @@ Featuring WebGL shader backgrounds, 3D parallax interactions, and a bespoke leat
 
 <table>
 <tr>
-<td align="center">
+<td align="center" colspan="3">
+<br>
 <img src="screenshots/desktop-projects.png" width="100%" alt="Hero Section" />
+<br><br>
+<b>Hero Section</b>
 <br>
-<sub><b>Hero</b> — WebGL shader backdrop with floating navigation bar</sub>
+WebGL shader backdrop with floating glassmorphism navigation bar
+<br><br>
 </td>
 </tr>
 <tr>
-<td align="center">
+<td align="center" colspan="3">
+<br>
 <img src="screenshots/desktop-hero.png" width="100%" alt="Featured Work" />
+<br><br>
+<b>Featured Work</b>
 <br>
-<sub><b>Featured Work</b> — 3D tilt cards with mouse-tracking spotlight</sub>
+3D tilt cards with mouse-tracking radial spotlight and staggered animations
+<br><br>
 </td>
 </tr>
 <tr>
-<td align="center">
-<img src="screenshots/desktop-contact.png" width="100%" alt="Contact Section" />
+<td align="center" colspan="3">
 <br>
-<sub><b>Contact</b> — Form with EmailJS integration and field validation</sub>
+<img src="screenshots/desktop-contact.png" width="100%" alt="Contact Section" />
+<br><br>
+<b>Contact</b>
+<br>
+EmailJS integration with real-time field validation
+<br><br>
 </td>
 </tr>
 </table>
 
+<br>
+
+<details>
+<summary><b>Mobile Views</b></summary>
 <br>
 
 <table>
@@ -80,7 +86,7 @@ Featuring WebGL shader backgrounds, 3D parallax interactions, and a bespoke leat
 <td align="center" width="33%">
 <img src="screenshots/mobile-hero.jpg" width="100%" alt="Mobile Hero" />
 <br>
-<sub><b>Mobile Hero</b></sub>
+<sub><b>Hero</b></sub>
 </td>
 <td align="center" width="33%">
 <img src="screenshots/mobile-about.jpg" width="100%" alt="Mobile About" />
@@ -95,15 +101,15 @@ Featuring WebGL shader backgrounds, 3D parallax interactions, and a bespoke leat
 </tr>
 </table>
 
-<sub>Responsive across all viewports — desktop, tablet, and mobile.</sub>
+Fully responsive across desktop, tablet, and mobile viewports.
+
+</details>
 
 </div>
 
 <br>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:1a0f08,50:3c2415,100:c9a96e&height=2" width="100%" />
-
-<br>
+---
 
 ## Tech Stack
 
@@ -111,19 +117,54 @@ Featuring WebGL shader backgrounds, 3D parallax interactions, and a bespoke leat
 
 | Layer | Technologies |
 |:------|:------------|
-| **Frontend** | React 19 · JavaScript · Tailwind CSS 4 · Framer Motion |
-| **3D / Visual** | Three.js · React Three Fiber · React Three Drei · WebGL Shaders |
-| **Build** | Vite 7 · ESLint |
-| **Integrations** | EmailJS · React Router 7 |
+| **Frontend** | React 19, JavaScript, Tailwind CSS 4, Framer Motion |
+| **3D / Visual** | Three.js, React Three Fiber, React Three Drei, WebGL Shaders |
+| **Build** | Vite 7, ESLint |
+| **Integrations** | EmailJS, React Router 7 |
 | **Deployment** | Netlify |
 
 </div>
 
 <br>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:1a0f08,50:3c2415,100:c9a96e&height=2" width="100%" />
+---
+
+## Key Highlights
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### Rendering and Performance
+
+- GPU-accelerated WebGL shader backgrounds (GLSL)
+- `React.lazy` + `Suspense` for route-level code splitting
+- `requestAnimationFrame`-throttled mouse tracking
+- `memo` and `useCallback` throughout component tree
+- Compositor-only CSS transforms for 60fps animations
+- `will-change` hints and `translateZ(0)` GPU promotion
+- `prefers-reduced-motion` media query respected
+
+</td>
+<td width="50%" valign="top">
+
+### Design and Interaction
+
+- Custom spring-physics cursor with contextual labels
+- 3D perspective tilt on project cards via `mousemove`
+- Mouse-tracking radial spotlight on hover
+- Floating glassmorphism navigation with backdrop blur
+- Leather diamond-pattern backgrounds (pure CSS)
+- Gold accent system with `conic-gradient` borders
+- Staggered `framer-motion` orchestrated entrance animations
+
+</td>
+</tr>
+</table>
 
 <br>
+
+---
 
 ## Architecture
 
@@ -166,52 +207,11 @@ Portfolio/
 
 <br>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:1a0f08,50:3c2415,100:c9a96e&height=2" width="100%" />
-
-<br>
-
-## Key Highlights
-
-<table>
-<tr>
-<td width="50%">
-
-**Rendering and Performance**
-
-- GPU-accelerated WebGL shader backgrounds (GLSL)
-- `React.lazy` + `Suspense` for route-level code splitting
-- `requestAnimationFrame`-throttled mouse tracking
-- `memo` and `useCallback` throughout component tree
-- Compositor-only CSS transforms for 60fps animations
-- `will-change` hints and `translateZ(0)` GPU promotion
-- `prefers-reduced-motion` media query respected
-
-</td>
-<td width="50%">
-
-**Design and Interaction**
-
-- Custom spring-physics cursor with contextual labels
-- 3D perspective tilt on project cards via `mousemove`
-- Mouse-tracking radial spotlight on hover
-- Floating glassmorphism navigation with backdrop blur
-- Leather diamond-pattern backgrounds (pure CSS)
-- Gold accent system with `conic-gradient` borders
-- Staggered `framer-motion` orchestrated entrance animations
-
-</td>
-</tr>
-</table>
-
-<br>
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:1a0f08,50:3c2415,100:c9a96e&height=2" width="100%" />
-
-<br>
+---
 
 ## Design System
 
-The portfolio uses a custom brown-gold-cream color palette designed to evoke a premium, warm, and tactile aesthetic:
+The portfolio uses a custom brown-gold-cream color palette:
 
 ```
 Background     #1a0f08     Dark espresso
@@ -223,13 +223,11 @@ Accent Copper  #b87333     Burnished copper
 Cream          #fdf8f0     Antique parchment
 ```
 
-Typography is built on three axes: **Cormorant Garamond** for editorial headings, **Work Sans** for body text, and **JetBrains Mono** for code and labels.
+Typography: **Cormorant Garamond** for headings, **Work Sans** for body text, **JetBrains Mono** for code and labels.
 
 <br>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:1a0f08,50:3c2415,100:c9a96e&height=2" width="100%" />
-
-<br>
+---
 
 ## Getting Started
 
@@ -249,15 +247,11 @@ npm run dev
 
 The application will be available at `http://localhost:5173`.
 
-<br>
-
 **Prerequisites:** Node.js 18+ and npm 9+.
 
 <br>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:1a0f08,50:3c2415,100:c9a96e&height=2" width="100%" />
-
-<br>
+---
 
 ## Available Scripts
 
@@ -270,9 +264,7 @@ The application will be available at `http://localhost:5173`.
 
 <br>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:1a0f08,50:3c2415,100:c9a96e&height=2" width="100%" />
-
-<br>
+---
 
 ## Performance
 
@@ -289,9 +281,7 @@ The application will be available at `http://localhost:5173`.
 
 <br>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:1a0f08,50:3c2415,100:c9a96e&height=2" width="100%" />
-
-<br>
+---
 
 ## License
 
@@ -299,42 +289,40 @@ This project is licensed under the [MIT License](LICENSE).
 
 <br>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:1a0f08,50:3c2415,100:c9a96e&height=2" width="100%" />
-
-<br>
+---
 
 ## Contact
 
 <div align="center">
 
-**Manan Jani** — Full Stack Developer
+**Manan Jani** -- Full Stack Developer
 
 <br>
 
 <a href="mailto:manan.jani.cg@gmail.com">
-  <img src="https://img.shields.io/badge/Email-manan.jani.cg@gmail.com-2a1a0e?style=flat-square&logo=gmail&logoColor=c9a96e&labelColor=1a0f08" />
+  <img src="https://img.shields.io/badge/Gmail-b87333?style=for-the-badge&logo=gmail&logoColor=white" />
 </a>
-&nbsp;&nbsp;
+&nbsp;
 <a href="https://www.linkedin.com/in/manan-jani-1a22443a3/">
-  <img src="https://img.shields.io/badge/LinkedIn-Manan_Jani-2a1a0e?style=flat-square&logo=linkedin&logoColor=c9a96e&labelColor=1a0f08" />
+  <img src="https://img.shields.io/badge/LinkedIn-b87333?style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>
-&nbsp;&nbsp;
+&nbsp;
 <a href="https://github.com/mananjani2102">
-  <img src="https://img.shields.io/badge/GitHub-mananjani2102-2a1a0e?style=flat-square&logo=github&logoColor=c9a96e&labelColor=1a0f08" />
+  <img src="https://img.shields.io/badge/GitHub-b87333?style=for-the-badge&logo=github&logoColor=white" />
 </a>
-&nbsp;&nbsp;
+&nbsp;
 <a href="https://x.com/Mananjani2102">
-  <img src="https://img.shields.io/badge/X-@Mananjani2102-2a1a0e?style=flat-square&logo=x&logoColor=c9a96e&labelColor=1a0f08" />
+  <img src="https://img.shields.io/badge/X-b87333?style=for-the-badge&logo=x&logoColor=white" />
 </a>
 
 <br><br>
 
 <a href="https://manan-jani.netlify.app/">
-  <img src="https://img.shields.io/badge/View_Portfolio-manan--jani.netlify.app-c9a96e?style=for-the-badge&labelColor=1a0f08" />
+  <img src="https://img.shields.io/badge/Portfolio-manan--jani.netlify.app-5c3a20?style=for-the-badge&labelColor=b87333&logoColor=white" />
 </a>
 
 </div>
 
 <br>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:c9a96e,50:3c2415,100:1a0f08&height=120&section=footer" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:b87333,25:c9a96e,50:d4a574,75:c9a96e,100:b87333&height=120&section=footer" width="100%" />
